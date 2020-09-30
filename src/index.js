@@ -1,9 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react"
+import ReactDOM from "react-dom"
+import MediaQuery from 'react-responsive'
+import 'antd/dist/antd.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
-const f1 =(a,b)=>{
-    return(a+b)
-}
-
-console.log(f1(1,2))
-
+import "./css/style.css"
