@@ -1,0 +1,22 @@
+.tab-bar{
+    width: 100%;
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.tab-bar ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-bar li{
+    list-style: none;
+    float: left;
+}
+
+.tab-bar li a{
+    color: #fff;
+    font-size: 22px;
+}
