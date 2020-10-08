@@ -11,6 +11,7 @@ import {
 
 import "./css/style.css"
 import Indexx from './IronMan/index'
+import Detail from './detail/detail'
 
 
 class Index extends React.Component{

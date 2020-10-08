@@ -1,9 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const webpack = require('webpack')
+
+
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/order/order.js",
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'dist')
@@ -15,7 +18,17 @@ module.exports = {
             },
             {
                 test:/\.css$/,
-                use:["style-loader","css-loader",]
+                use:[
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    {
+                        loader:"px2rem-loader",
+                        options:{
+                            remUni:64,
+                            remPrecision:8
+                        }
+                    }
+                ]
             },
             {
                 test:/\.(png|jpg|gif|jpeg)$/,
@@ -25,7 +38,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/order/order.html"
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[contenthash:8].css',
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -37,3 +53,4 @@ module.exports = {
         contentBase:"./dist"
     }
 }
+
