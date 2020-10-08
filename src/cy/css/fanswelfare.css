@@ -1,0 +1,25 @@
+
+.tab .s{
+    float:right;
+    margin-right: 20px;
+}
+
+
+.con2{
+    background-color: cadetblue;
+}
+.con2 .t{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.con2 .t .shop{
+    padding-left: 20px;
+}
+.bot{
+
+    padding-top: 20px;
+}
+.bot h2{
+    text-align: center;
+}

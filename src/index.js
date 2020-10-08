@@ -10,9 +10,15 @@ import {
   } from "react-router-dom";
 
 import "./css/style.css"
-import Indexx from './IronMan/index'
+// import Indexx from './IronMan/index'
 
 
+// 社区
+import Community from './cy/community'
+// 粉丝福利购
+import Fanswelfare from './cy/FansWelfare'
+// 搜索结果
+import SearchShow from './cy/searchshow'
 class Index extends React.Component{
   render(){
       return (
@@ -24,20 +30,28 @@ class Index extends React.Component{
                         <Link to="/">首页</Link>
                       </li>
                       <li>
-                        <Link to="/category">分类</Link>
+                        <Link to="/earnings">分类</Link>
+                      </li>
+                      <li>
+                        <Link to="/community">社区</Link>
                       </li>
                   </ul>
                   </nav>
               </div>
               <Switch>
                   {/* path和Link to 对应写路由 */}
-                  <Route path="/category">
+                  <Route path="/community">
                       {/* 这里写导入的组件 */}
-                      <Indexx />
+                      
                   </Route>
                   {/* 首页必须在最后一个 */}
+                  <Route path="/earnings">
+                      {/* 这里写导入的组件 */}
+  
+                  </Route>
                   <Route path="/">
-                      <Indexx />
+                      {/* <Indexx /> */}
+                      <SearchShow />
                   </Route>
               </Switch>
           </Router>

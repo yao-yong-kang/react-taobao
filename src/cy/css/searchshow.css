@@ -1,0 +1,26 @@
+.con2{
+    border-top: 1px solid black;
+}
+.con .l{
+    width: 20%;
+ 
+    float: left;
+
+}
+.con .l .ta     {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+}
+.con .r{
+    width: 80%;
+
+    float: left;
+}
+.con .r .shop{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}

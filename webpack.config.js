@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
+
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
@@ -15,7 +16,16 @@ module.exports = {
             },
             {
                 test:/\.css$/,
-                use:["style-loader","css-loader",]
+                use:[
+                    "style-loader","css-loader",
+                    // {
+                    //     loader:"px2rem-loader",
+                    //     options:{
+                    //         remUni:64,
+                    //         remPrecision:8
+                    //     }
+                    // }
+                ]
             },
             {
                 test:/\.(png|jpg|gif|jpeg)$/,
