@@ -3,7 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const webpack = require('webpack')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
 module.exports = {
     mode: "development",
     entry: "./src/order/order.js",
@@ -20,6 +23,7 @@ module.exports = {
 <<<<<<< HEAD
                 test:/\.css$/,
                 use:[
+<<<<<<< HEAD
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     {
@@ -39,6 +43,16 @@ module.exports = {
 >>>>>>> 976e39e847c59dda87ef6f2634b15a1c6f341d72
                         }
                     }
+=======
+                    "style-loader","css-loader",
+                    // {
+                    //     loader:"px2rem-loader",
+                    //     options:{
+                    //         remUni:64,
+                    //         remPrecision:8
+                    //     }
+                    // }
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
                 ]
             },
             {

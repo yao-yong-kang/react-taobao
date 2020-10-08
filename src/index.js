@@ -13,6 +13,7 @@ import {
   import {HomeOutlined, AppstoreOutlined,TeamOutlined, FundOutlined, UserOutlined} from '@ant-design/icons'
 
 import "./css/style.css"
+<<<<<<< HEAD
 import Indexx from './IronMan/index'
 <<<<<<< HEAD
 import Detail from './detail/detail'
@@ -27,8 +28,17 @@ import Search from './IronMan/search'
 import Result from './IronMan/result'
 
 >>>>>>> 976e39e847c59dda87ef6f2634b15a1c6f341d72
+=======
+// import Indexx from './IronMan/index'
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
 
 
+// 社区
+import Community from './cy/community'
+// 粉丝福利购
+import Fanswelfare from './cy/FansWelfare'
+// 搜索结果
+import SearchShow from './cy/searchshow'
 class Index extends React.Component{
   render(){
       return (
@@ -49,6 +59,7 @@ class Index extends React.Component{
                         <Link to="/"><HomeOutlined className='nav-logo' /><br/>首页</Link>
                       </li>
                       <li>
+<<<<<<< HEAD
                         <Link to="/"><AppstoreOutlined className='nav-logo'/><br/>分类</Link>
                       </li>
                       <li>
@@ -59,22 +70,39 @@ class Index extends React.Component{
                       </li>
                       <li>
                         <Link to="/"><UserOutlined className='nav-logo'/><br/>我的</Link>
+=======
+                        <Link to="/earnings">分类</Link>
+                      </li>
+                      <li>
+                        <Link to="/community">社区</Link>
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
                       </li>
                   </ul>
                   </nav>
               </div>
               <Switch>
                   {/* path和Link to 对应写路由 */}
+<<<<<<< HEAD
                   <Route path="/search">
                       {/* 这里写导入的组件 */}
                       <Search />
                   </Route>
                   <Route path="/result">
                     <Result />
+=======
+                  <Route path="/community">
+                      {/* 这里写导入的组件 */}
+                      
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
                   </Route>
                   {/* 首页必须在最后一个 */}
+                  <Route path="/earnings">
+                      {/* 这里写导入的组件 */}
+  
+                  </Route>
                   <Route path="/">
-                      <Indexx />
+                      {/* <Indexx /> */}
+                      <SearchShow />
                   </Route>
               </Switch>
           </Router>
