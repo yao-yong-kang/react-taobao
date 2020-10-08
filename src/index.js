@@ -11,7 +11,11 @@ import {
 
 import "./css/style.css"
 import Indexx from './IronMan/index'
-
+import Header from './yyk/4'
+import Nc from "./yyk/16"
+import Sj from "./yyk/17"
+import Mm from "./yyk/18"
+import Tz from "./yyk/24"
 
 class Index extends React.Component{
   render(){
@@ -23,19 +27,10 @@ class Index extends React.Component{
                       <li>
                         <Link to="/">首页</Link>
                       </li>
-                      <li>
-                        <Link to="/category">分类</Link>
-                      </li>
                   </ul>
                   </nav>
               </div>
               <Switch>
-                  {/* path和Link to 对应写路由 */}
-                  <Route path="/category">
-                      {/* 这里写导入的组件 */}
-                      <Indexx />
-                  </Route>
-                  {/* 首页必须在最后一个 */}
                   <Route path="/">
                       <Indexx />
                   </Route>

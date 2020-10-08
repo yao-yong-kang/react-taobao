@@ -1,0 +1,30 @@
+/* body{
+    text-align: center;
+} */
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.center{
+    text-align: center;
+}
+.button{
+    margin-top: 200px;
+    border-radius: 30px;
+    background-color: coral;
+    width: 50%;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    height: 150px;
+}
+.title{
+    font-size: 100px;
+}
+.kg{
+    height: 100%;
+    width: 300%;
+}
