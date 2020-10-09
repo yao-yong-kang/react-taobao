@@ -1,0 +1,67 @@
+body{
+    background: #f9faf9;
+    margin:0;
+    padding:0;
+    
+}
+
+.box1{
+    width: 410px;
+    height: 310px;
+    background:white;
+    position: fixed;
+    left:50%;
+    top:40%; 
+    margin-left: -200px;
+    margin-top: -200px;
+    border-radius:10px ;
+    box-shadow: #f3f4f7 0px 0px 30px 5px ;
+    
+}
+.box2{
+    width: 410px;
+    height: 410px;
+    background:white;
+    position: fixed;
+    left:50%;
+    top:40%; 
+    margin-left: -200px;
+    margin-top: -200px;
+    border-radius:10px ;
+    box-shadow: #f3f4f7 0px 0px 30px 5px ;
+    
+}
+.login{
+    background: #ee894c;
+    width: 350px;
+    height: 41px;
+    border-radius:5px ;
+    border:none;
+}
+
+.text{
+    background:  #eff1f5;
+    width: 350px;
+    height: 41px;
+    border-radius:5px;
+    border:none;
+}
+
+#tip{
+    background-image: url('./img/landing_phone.png');
+    background-size: 3.5%;
+    background-repeat: no-repeat;
+    background-position: 15px 12px ;
+}
+#tip1{
+    background-image: url('./img/login_verification_code.png');
+    background-size: 4.5%;
+    background-repeat: no-repeat;
+    background-position: 5px 10px ;
+}
+#ico{
+    width: 90px;
+    height: 90px;
+    margin: -180px 160px ;
+}
+

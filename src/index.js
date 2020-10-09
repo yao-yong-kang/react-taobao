@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import MediaQuery from 'react-responsive'
-import { Row, Col, Input, SearchOutlined, Carousel, Menu, Statistic } from "antd"
+import { Row, Col, Input, SearchOutlined,Carousel, Menu, Statistic } from "antd"
 import {ScanOutlined,CommentOutlined} from '@ant-design/icons'
 import 'antd/dist/antd.css'
 import {
@@ -52,9 +52,6 @@ class Index extends React.Component{
                       </li>
                       <li>
                         <Link to="/"><FundOutlined className='nav-logo'/><br/>收益</Link>
-                      </li>
-                      <li>
-                        <Link to="/"><UserOutlined className='nav-logo'/><br/>我的</Link>
                       </li>
                   </ul>
                   </nav>
