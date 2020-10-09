@@ -1,0 +1,43 @@
+.code-box-demo {
+    text-align: center;
+  }
+  .ant-layout-header{
+    background: #fff;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+  }
+  .ant-layout-footer {
+    background: orange;
+    color: #fff;
+  }
+  [data-theme="dark"] .ant-layout-header {
+    background: #6aa0c7;
+  }
+  [data-theme="dark"] .ant-layout-footer {
+    background: #6aa0c7;
+  }
+  .ant-layout-footer {
+    line-height: 1.5;
+  }
+  .ant-layout-sider {
+    background: #3ba0e9;
+    color: #fff;
+    line-height: 120px;
+  }
+  [data-theme="dark"] .ant-layout-sider {
+    background: #3499ec;
+  }
+  .ant-layout-content {
+    background: #fff;
+    color: #fff;
+    min-height: 120px;
+    line-height: 120px;
+    padding-left: 5%;
+  }
+  [data-theme="dark"] .ant-layout-content {
+    background: red;
+  }
+  .code-box-demo > .ant-layout + .ant-layout {
+    margin-top: 48px;
+  }

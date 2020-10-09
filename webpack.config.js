@@ -1,9 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const webpack = require('webpack')
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/order/order.js",
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'dist')
@@ -14,6 +20,18 @@ module.exports = {
                 use: "babel-loader"
             },
             {
+<<<<<<< HEAD
+                test:/\.css$/,
+                use:[
+<<<<<<< HEAD
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    {
+                        loader:"px2rem-loader",
+                        options:{
+                            remUni:64,
+                            remPrecision:8
+=======
                 test: /\.css$/,
                 use: ["style-loader",
                     "css-loader",
@@ -22,8 +40,19 @@ module.exports = {
                         options: {
                             remUni: 64,
                             remPrecision: 8
+>>>>>>> 976e39e847c59dda87ef6f2634b15a1c6f341d72
                         }
                     }
+=======
+                    "style-loader","css-loader",
+                    // {
+                    //     loader:"px2rem-loader",
+                    //     options:{
+                    //         remUni:64,
+                    //         remPrecision:8
+                    //     }
+                    // }
+>>>>>>> f6b0acc17566bf83fcca1fb3465ba3f41fc2897e
                 ]
             },
             {
@@ -34,7 +63,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/order/order.html"
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[contenthash:8].css',
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -46,3 +78,4 @@ module.exports = {
         contentBase: "./dist"
     }
 }
+

@@ -13,6 +13,7 @@ import {
   import {HomeOutlined, AppstoreOutlined,TeamOutlined, FundOutlined, UserOutlined} from '@ant-design/icons'
 
 import "./css/style.css"
+
 import Indexx from './IronMan/index'
 import Header from './yyk/4'
 import Nc from "./yyk/16"
@@ -25,6 +26,13 @@ import Result from './IronMan/result'
 
 
 
+
+// 社区
+import Community from './cy/community'
+// 粉丝福利购
+import Fanswelfare from './cy/FansWelfare'
+// 搜索结果
+import SearchShow from './cy/searchshow'
 class Index extends React.Component{
   render(){
       return (
@@ -53,21 +61,30 @@ class Index extends React.Component{
                       <li>
                         <Link to="/"><FundOutlined className='nav-logo'/><br/>收益</Link>
                       </li>
+                      <li>
+                        <Link to="/"><UserOutlined className='nav-logo'/><br/>我的</Link>
+                        <Link to="/earnings">分类</Link>
+                      </li>
+                      <li>
+                        <Link to="/community">社区</Link>
+                      </li>
                   </ul>
                   </nav>
               </div>
               <Switch>
                   {/* path和Link to 对应写路由 */}
-                  <Route path="/search">
+                  <Route path="/community">
                       {/* 这里写导入的组件 */}
-                      <Search />
-                  </Route>
-                  <Route path="/result">
-                    <Result />
+                      
                   </Route>
                   {/* 首页必须在最后一个 */}
+                  <Route path="/earnings">
+                      {/* 这里写导入的组件 */}
+  
+                  </Route>
                   <Route path="/">
-                      <Indexx />
+                      {/* <Indexx /> */}
+                      <SearchShow />
                   </Route>
               </Switch>
           </Router>
